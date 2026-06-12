@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Cormorant Garamond", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom styles for high-end cinematic experience */
+body {
+  background-color: #050505; /* Deep luxury black */
+  color: #E0D8D0; /* Warm paper tint light gray */
+  font-family: var(--font-serif);
+  overscroll-behavior: none;
+}
+
+/* Custom scrollbar for absolute minimal look */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Ambient glow keyframes */
+@keyframes ambientGlow {
+  0%, 100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.18;
+    transform: scale(1.08);
+  }
+}
+
+.ambient-aurora {
+  filter: blur(100px);
+  animation: ambientGlow 15s ease-in-out infinite;
+}

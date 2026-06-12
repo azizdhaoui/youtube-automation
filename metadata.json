@@ -1,0 +1,8 @@
+{
+  "name": "Existential Script Studio",
+  "description": "An interactive workspace for crafting, writing, and storyboarding deeply engaging YouTube psychology and philosophy documentaries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
